@@ -3,6 +3,10 @@
 	margin: 0;
 	padding: 0;
 }
+@font-face{
+	font-family: MEFont;
+	src: url(me123.ttf);
+}
 html {
 	background-color: white;
 }
@@ -31,6 +35,7 @@ header {
 	    30deg, #f6bb73 0%, #fffded 30%, white 50%, #fffded 80%, #f6bb73 100%);
 }
 header h2 {
+	font-family: MEFont;
 	font-size: 175%;
 	color: #800000;
 }
@@ -120,10 +125,21 @@ article h2 {
 	font-size: 115%;
 	padding: 0 0 .25em 0;
 }
-article img {
+figure{
 	float: right;
+}
+
+article img {
 	margin: .5em 0 1em 1em;
 	border: 1px solid black;
+}
+
+
+article figcaption{
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	display: block;
+	margin-left: 1em;
 }
 
 /* the styles for the aside */
